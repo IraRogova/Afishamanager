@@ -92,7 +92,7 @@ class AfishaManagerTest {
     }
 
     @Test
-    void shouldAdd() {
+    void shouldAddMovie() {
         AfishaManager manager = new AfishaManager();
         manager.add(first);
         manager.add(second);
