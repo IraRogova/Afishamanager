@@ -4,10 +4,13 @@ import ru.netology.domain.Afisha;
 
 public class AfishaManager {
   private Afisha[] items = new Afisha[0];
-    private int Movie;
+    private int movie = 10;
 
-    public AfishaManager(int Movie) {
-        this.Movie = Movie;
+    public AfishaManager() {
+    }
+
+    public AfishaManager(int movie) {
+        this.movie = movie;
     }
 
 
@@ -22,7 +25,7 @@ public class AfishaManager {
     items = tmp;
   }
 
-  public Afisha[] getAll() {
+    public Afisha[] getAll() {
 
       Afisha[] result = new Afisha[items.length];
       for (int i = 0; i < result.length; i++) {
@@ -34,7 +37,7 @@ public class AfishaManager {
 
 
     public Afisha[] getLastMovie() {
-        int length = Movie;
+        int length = movie;
         if (length > items.length) {
             length = items.length;
         }
